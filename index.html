@@ -68,9 +68,10 @@
   .button:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
   .shots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 22px; }
   .shots img { width: 100%; height: auto; border-radius: 8px; border: 2px solid var(--outline); }
-  .section { margin-top: 24px; padding: 20px; }
-  .section h2 { margin: 0 0 10px; font-size: 22px; }
-  .section p { margin: 0; }
+  .section, .game-card { margin-top: 24px; }
+  .section, .about { padding: 20px; }
+  .section h2, .about h2 { margin: 0 0 10px; font-size: 22px; }
+  .section p, .about p { margin: 0; }
   .slots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 18px; }
   .slot {
     aspect-ratio: 3 / 2;
@@ -98,7 +99,12 @@
     <p>An enthusiastic independent game developer.</p>
   </header>
 
-  <article class="card">
+  <section class="card about">
+    <h2 class="pixel">About me</h2>
+    <p>I've been playing games since I was little, and I've always loved following the gaming industry. I always had ideas for games of my own, and after all these years I'm turning those dreams into reality.</p>
+  </section>
+
+  <article class="card game-card">
     <img class="banner" src="img/banner.png" width="1024" height="500" alt="Balloon Pop: colourful pixel-art balloons floating in a blue sky">
     <div class="game">
       <div class="title-row">
@@ -117,11 +123,6 @@
       </div>
     </div>
   </article>
-
-  <section class="card section">
-    <h2 class="pixel">About me</h2>
-    <p>I've been playing games since I was little, and I've always loved following the gaming industry. I always had ideas for games of my own, and after all these years I'm turning those dreams into reality.</p>
-  </section>
 
   <section class="card section">
     <h2 class="pixel">Future projects</h2>
