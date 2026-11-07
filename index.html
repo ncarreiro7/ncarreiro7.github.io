@@ -68,6 +68,19 @@
   .button:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
   .shots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 22px; }
   .shots img { width: 100%; height: auto; border-radius: 8px; border: 2px solid var(--outline); }
+  .section { margin-top: 24px; padding: 20px; }
+  .section h2 { margin: 0 0 10px; font-size: 22px; }
+  .section p { margin: 0; }
+  .slots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 18px; }
+  .slot {
+    aspect-ratio: 3 / 2;
+    display: flex; align-items: center; justify-content: center;
+    background: #1d2340;
+    border: 3px solid var(--outline);
+    border-radius: 12px;
+    color: #6170a8;
+    font-size: clamp(36px, 9vw, 64px);
+  }
   footer { text-align: center; margin-top: 28px; color: var(--ink); font-size: 15px; }
   footer a { color: var(--ink); }
   footer p { margin: 4px 0; }
@@ -104,6 +117,21 @@
       </div>
     </div>
   </article>
+
+  <section class="card section">
+    <h2 class="pixel">About me</h2>
+    <p>I've been playing games since I was little, and I've always loved following the gaming industry. I always had ideas for games of my own, and after all these years I'm turning those dreams into reality.</p>
+  </section>
+
+  <section class="card section">
+    <h2 class="pixel">Future projects</h2>
+    <p>More games are planned. Stay tuned!</p>
+    <div class="slots" aria-hidden="true">
+      <div class="slot pixel">?</div>
+      <div class="slot pixel">?</div>
+      <div class="slot pixel">?</div>
+    </div>
+  </section>
 
   <footer>
     <p>Contact: nunocarreiro7 (at) gmail.com</p>
