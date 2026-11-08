@@ -5,7 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Nucarn Games</title>
 <meta name="description" content="Nucarn is an independent developer of small pixel-art games, including Balloon Pop for Android.">
-<link rel="icon" type="image/png" href="img/icon.png">
+<link rel="icon" type="image/svg+xml" href="img/logo.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="img/logo-32.png">
+<link rel="apple-touch-icon" href="img/logo-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
@@ -38,6 +40,7 @@
     text-shadow: 2px 0 var(--outline), -2px 0 var(--outline), 0 2px var(--outline), 0 -2px var(--outline), 3px 3px var(--outline);
   }
   header p { margin: 6px 0 0; font-size: 17px; }
+  header .logo { width: 128px; height: auto; margin: 0 auto 12px; image-rendering: auto; filter: drop-shadow(3px 4px 0 rgba(0, 0, 0, 0.15)); }
   .card {
     background: var(--card);
     border: 3px solid var(--outline);
@@ -88,6 +91,7 @@
   footer p { margin: 4px 0; }
   @media (max-width: 480px) {
     header h1 { font-size: 30px; }
+    header .logo { width: 104px; }
     .game { padding: 16px; }
     .shots { gap: 8px; }
   }
@@ -96,6 +100,7 @@
 <body>
 <main>
   <header>
+    <img class="logo" src="img/logo.svg" width="128" height="128" alt="Nucarn logo: a caravela sailing on the waves">
     <h1 class="pixel">NUCARN</h1>
     <p>Gaming Industry Enthusiast & Independent Game Developer</p>
   </header>
