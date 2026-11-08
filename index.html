@@ -72,15 +72,16 @@
   .section, .about { padding: 20px; }
   .section h2, .about h2 { margin: 0 0 10px; font-size: 22px; }
   .section p, .about p { margin: 0; }
-  .slots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 18px; }
+  .about p + p { margin-top: 12px; }
+  .slots { margin-top: 18px; }
   .slot {
-    aspect-ratio: 3 / 2;
+    height: 140px;
     display: flex; align-items: center; justify-content: center;
     background: #1d2340;
     border: 3px solid var(--outline);
     border-radius: 12px;
     color: #6170a8;
-    font-size: clamp(36px, 9vw, 64px);
+    font-size: 72px;
   }
   footer { text-align: center; margin-top: 28px; color: var(--ink); font-size: 15px; }
   footer a { color: var(--ink); }
@@ -101,9 +102,8 @@
 
   <section class="card about">
     <h2 class="pixel">About me</h2>
-    <p>I've been hooked on video games since I was little, starting with my very first obsession: Pokémon Red on the original Game Boy trying to collect them all or gathering all the 120 starts in Super Mario 64. That lifelong passion only grew over the years, spanning everything from falling in love all over again with the original Demon's Souls on the PS3, to diving into the latest releases of all kinds today.
-
-I’ve always had ideas for games of my own swirling around in my head. After a lifetime of dreaming about what could be, I'm finally turning those visions into reality by releasing my very own first game.</p>
+    <p>I've been hooked on video games since I was little, starting with my very first obsession: Pokémon Red on the original Game Boy trying to collect them all or gathering all the 120 starts in Super Mario 64. That lifelong passion only grew over the years, spanning everything from falling in love all over again with the original Demon's Souls on the PS3, to diving into the latest releases of all kinds today.</p>
+    <p>I’ve always had ideas for games of my own swirling around in my head. After a lifetime of dreaming about what could be, I'm finally turning those visions into reality by releasing my very own first game.</p>
   </section>
 
   <article class="card game-card">
