@@ -10,7 +10,7 @@
 <link rel="apple-touch-icon" href="img/logo-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Silkscreen&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Passion+One&family=Poppins:wght@700&family=Silkscreen&display=swap" rel="stylesheet">
 <style>
   :root {
     --sky: #6fb7e8;
@@ -34,10 +34,11 @@
   img { image-rendering: pixelated; display: block; }
   main { max-width: 760px; margin: 0 auto; padding: 32px 16px 48px; }
   .pixel { font-family: "Silkscreen", monospace; font-weight: 400; letter-spacing: 0.5px; }
-  .serif { font-family: "Cinzel", Georgia, serif; font-weight: 700; letter-spacing: 1px; }
+  .title { font-family: "Poppins", system-ui, sans-serif; font-weight: 700; letter-spacing: 0.5px; }
+  .brand { font-family: "Passion One", system-ui, sans-serif; font-weight: 400; }
   header { text-align: center; color: #1a1618; margin-bottom: 28px; }
   header h1 {
-    font-size: 44px; margin: 0; line-height: 1.1; letter-spacing: 6px;
+    font-size: 56px; margin: 0; line-height: 1; letter-spacing: 3px; color: var(--ink);
     text-shadow: none;
   }
   header p { margin: 6px 0 0; font-size: 17px; }
@@ -91,7 +92,7 @@
   footer a { color: #1a1618; }
   footer p { margin: 4px 0; }
   @media (max-width: 480px) {
-    header h1 { font-size: 30px; }
+    header h1 { font-size: 46px; }
     header .logo { width: 104px; }
     .game { padding: 16px; }
     .shots { gap: 8px; }
@@ -102,12 +103,12 @@
 <main>
   <header>
     <img class="logo" src="img/logo.svg" width="128" height="128" alt="Nucarn logo: a caravela sailing on the waves">
-    <h1 class="serif">NUCARN</h1>
+    <h1 class="brand">NUCARN</h1>
     <p>Gaming Industry Enthusiast & Independent Game Developer</p>
   </header>
 
   <section class="card about">
-    <h2 class="serif">About me</h2>
+    <h2 class="title">About me</h2>
     <p>I've been hooked on video games since I was little, starting with my very first obsession: Pokémon Red on the original Game Boy collecting them all or gathering all 120 stars in Super Mario 64. That lifelong passion only grew over the years, spanning everything from falling in love all over again with the original Demon's Souls on the PS3, to diving into the latest releases of all kinds today.</p>
     <p>I’ve always had ideas for games of my own swirling around in my head. After a lifetime of dreaming about what could be, I'm finally turning those visions into reality by releasing my very own first game.</p>
   </section>
@@ -133,10 +134,10 @@
   </article>
 
   <section class="card section">
-    <h2 class="serif">Future projects</h2>
+    <h2 class="title">Future projects</h2>
     <p>More games are planned. Stay tuned!</p>
     <div class="slots" aria-hidden="true">
-      <div class="slot serif">?</div>
+      <div class="slot title">?</div>
     </div>
   </section>
 
